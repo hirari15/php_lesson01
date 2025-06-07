@@ -5,6 +5,8 @@
   <title>sample01</title>
 </head>
 <body>
-  <?php echo "PHP勉強中です"; ?>
+  <?php
+   echo 'PHP勉強中です'; 
+   ?>
 </body>
 </html>
