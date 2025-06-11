@@ -1,4 +1,5 @@
 <?php
-$fruits = ['りんご, 'ぶどう'];
+$fruits = ['りんご', 'ぶどう'];
 
+echo $fruits[0];
 ?>
