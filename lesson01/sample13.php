@@ -2,4 +2,5 @@
     <?php echo floor(100 / 3000 * 100); ?>%引きです。
 
 <br>
-<?php echo ceil(3.33); ?>
+<?php echo ceil(3.33); ?><br>
+<?php echo round(3.66, 1); ?><br>
