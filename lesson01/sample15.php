@@ -1,3 +1,3 @@
 <?php
-file_put_contents('news.txt',
+file_put_contents('data/news.txt',
     'ホームページをリニューアルしました');
