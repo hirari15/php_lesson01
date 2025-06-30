@@ -6,6 +6,8 @@
     <title>sumple20</title>
 </head>
 <body>
-    <p>お名前： <?php echo htmlspecialchars($_REQUEST['my_name'], ENT_QUOTES); ?></p>
+    <?php if (!empty($_REQUEST['my_name'])): ?>
+        <p>お名前： <?php echo htmlspecialchars($_REQUEST['my_name'], ENT_QUOTES); ?></p>
+    <?php endif; ?>
 </body>
 </html>
