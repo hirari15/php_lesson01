@@ -6,6 +6,6 @@
     <title>sumple20</title>
 </head>
 <body>
-    
+    <p>お名前： <?php echo $_REQUEST['my_name']; ?></p>
 </body>
 </html>
