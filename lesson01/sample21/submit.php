@@ -7,6 +7,7 @@
 </head>
 <body>
     <h2>ご予約日</h2>
+    <?php echo $_REQUEST['reserve']; ?>
     <ul>
         <li>1/2</li>
         <li>1/3</li>
