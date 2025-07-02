@@ -7,10 +7,11 @@
 </head>
 <body>
     <h2>ご予約日</h2>
-    <?php echo $_REQUEST['reserve']; ?>
+    <?php echo $reserves = $_REQUEST['reserve']; ?>
     <ul>
-        <li>1/2</li>
-        <li>1/3</li>
+        <?php foreach ($reserves as $reserve): ?>
+        <li><?php echo $reserve; ?></li>
+        <?php endforeach; ?>
     <ul>
     <?php if (!empty($_REPUEST['reserve'])): ?>
     <?php $reserves = $_REQUEST['reserve']; ?>
