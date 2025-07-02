@@ -7,13 +7,7 @@
 </head>
 <body>
     <h2>ご予約日</h2>
-    <?php echo $reserves = $_REQUEST['reserve']; ?>
-    <ul>
-        <?php foreach ($reserves as $reserve): ?>
-        <li><?php echo $reserve; ?></li>
-        <?php endforeach; ?>
-    <ul>
-    <?php if (!empty($_REPUEST['reserve'])): ?>
+    <?php if (!empty($_REQUEST['reserve'])): ?>
     <?php $reserves = $_REQUEST['reserve']; ?>
     <ul>
         <?php foreach ($reserves as $reserve): ?>
