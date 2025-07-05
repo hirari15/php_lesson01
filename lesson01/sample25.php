@@ -7,14 +7,16 @@
 </head>
 <body>
     <table>
-        <tr style="background-color: #ccc">
-            <td>1行目</td>
+        <?php for ($i=1; $i<=10; $i++): ?>
+            <?php if ($i % 2): ?>
+                <tr style="background-color: #ccc">
+            <?php else: ?>
+                <tr>
+            <?php endif; ?>
+            <td><?php echo $i; ?>行目</td>
             <td>abc</td>
         </tr>
-        <tr>
-            <td>2行目</td>
-            <td>abc</td>
-        </tr>
+        <?php endfor; ?>
     </table>
 </body>
 </html>
