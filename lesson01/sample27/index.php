@@ -1,7 +1,7 @@
 <?php
-$value = '変数に保存した値です';
-setcookie('message', 'Cookieに保存した値です',
-     time() + 60 * 60 * 24 * 14);
+session_start();
+session_regenerate_id();
+$_SESSION['message'] = 'セッションに保存した値です';
 ?>
 <!DOCTYPE html>
 <html lang="ja">

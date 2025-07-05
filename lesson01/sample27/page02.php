@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,7 +9,6 @@
     <title>Page02</title>
 </head>
 <body>
-    変数の値: <?php echo $value; ?><br>
-    Cookieの値: <?php echo $_COOKIE['message']; ?>
+    セッションの値: <?php echo $_SESSION['message']; ?>
 </body>
 </html>
