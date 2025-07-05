@@ -7,7 +7,7 @@
 </head>
 <body>
     <table>
-        <tr>
+        <tr style="background-color: #ccc">
             <td>1行目</td>
             <td>abc</td>
         </tr>
