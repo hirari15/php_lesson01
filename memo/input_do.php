@@ -9,7 +9,7 @@ $stmt->bind_param('s', $memo);
 $ret = $stmt->execute();
 
 if ($ret):
-    echo '登録されました';
+    echo '登録されたのです';
 else:
     $db->error;
 endif;
