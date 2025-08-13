@@ -4,7 +4,7 @@ $stmt = $db->prepare('select * from memos where id=?');
 if (!$stmt) {
     die($db->error);
 }
-$id = 99;
+$id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 $stmt->bind_param('i', $id);
 $stmt->execute();
 
